@@ -9,7 +9,7 @@ GameArea.refresh();
 let IsGameRunning = false;
 
 //動かすバー
-let bar = new CanvasComponents({
+const bar = new CanvasComponents({
     ctx: MainContext,
     img: "assets/bar.png",
     size: new Vector2(124, 15),
@@ -23,7 +23,7 @@ let bar = new CanvasComponents({
         }
     },
 });
-let ball = new CanvasComponents({
+const ball = new CanvasComponents({
     ctx: MainContext,
     img: "assets/ball.png",
     size: new Vector2(36, 36),
